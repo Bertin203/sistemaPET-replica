@@ -12,7 +12,7 @@
         <div id="bottomMenu">                         
             <nav>
                 <a href="#" id="mainLogoImg">
-                    <img src="../assets/pets.png" alt="logo" id="mainLogo" height="50">
+                    <img src="../assets/pets.png" alt="logo" id="mainLogo" height="50px">
                 </a>
                 <a href="#">Criadores</a>
                 <a href="#">Hotel/Creche</a>
@@ -25,77 +25,88 @@
         </div>
     </header>
     <main>
-        <div id="mainImg">
-            <img src="../assets/mainImg.png" alt="" id="mainImgPets">
-        </div>
-        <hr>
-        <br>
-        <div id="allCards"></div>
-            <div id="gestaoCriadores" class="cards">
-                <img src="../assets/pcIconOrig.svg" alt="" height="50px"><br>
-                <h5>Gestão Completa para Criadores</h5><br>
-                <h4>SISTEMAPET CRIADOR</h4><br>
-                <p>O mais completo sistema de gestão para criadores! 
-                Gestão de Ração, Planejamento de Ninhada, Gestão Financeira 
-                e muito mais!</p><br>
+        <section id="mainTitle">
+            <h1 class="mainTitle"><b>Bem-vindo ao Sistema Pet!</b></h1>
+            <h3 class="slogan"><i>Especialistas em Sistemas para o Bem-Estar Animal</i></h3>
+        </section>
+        <ul id="allCards">
+            <li id="gestaoCriadores" class="cards">
+                <img class="icon" src="../assets/pcIconOrig.svg" alt="" height="50px"><br>
+                <div class="info">
+                    <h5 class="titulo">Gestão Completa para Criadores</h5><br>
+                    <h4 class="titulo">SISTEMAPET CRIADOR</h4><br>
+                    <p class="desc">O mais completo sistema de gestão para criadores! 
+                    Gestão de Ração, Planejamento de Ninhada, Gestão Financeira 
+                    e muito mais!</p><br>
+                </div>
                 <button>SAIBA MAIS</button>            
-            </div>
+            </li>
             <br>
             <br>
-            <div id="gestaoHoteis" class="cards">
-                <img src="../assets/hotelIconOrig.svg" alt="" height="50px"><br>
-                <h5>Gestão para Hotéis/Creches/Daycare de Animais</h5><br>
-                <h4>SISTEMAPET HOTEL/CRECHE/DAYCARE</h4><br>
-                <p>Gestão para Hotéis/Creches/Daycares de Cães & Gatos.. 
-                    Controle de Reservas, Venda de Produtos e Serviços, 
-                    Gestão de Clientes e muito mais!</p><br>
+            <li id="gestaoHoteis" class="cards">
+                <img class="icon" src="../assets/hotelIconOrig.svg" alt="" height="50px"><br>
+                <div class="info">
+                    <h5 class="titulo">Gestão para Daycare de Animais</h5><br>
+                    <h4 class="titulo">SISTEMAPET DAYCARE</h4><br>
+                    <p>Gestão para Hotéis/Creches/Daycares de Cães & Gatos.
+                        Controle de Reservas, Venda de Produtos e Serviços, 
+                        Gestão de Clientes e muito mais!</p><br>
+                </div>
                 <button>SAIBA MAIS</button>            
-            </div>
+            </li>
             <br>
             <br>
-            <div id="gestaoBanhoTosa" class="cards">
-                <img src="../assets/tesoura.svg" alt="" height="50px"><br>
-                <h5>Gestão para Banho & Tosa</h5><br>
-                <h4>SISTEMAPET BANHO & TOSA</h4><br>
-                <p>Gestão para o seu Banho & Tosa. 
-                Agenda de Banhistas, Reservas, 
-                Controle de Clientes, Serviços Adicionais 
-                e muito mais!</p><br>
+            <li id="gestaoBanhoTosa" class="cards">
+                <img class="icon" src="../assets/tesoura.svg" alt="" height="50px"><br>
+                <div class="info">
+                    <h5 class="titulo">Gestão para Banho & Tosa</h5><br>
+                    <h4 class="titulo">SISTEMAPET BANHO & TOSA</h4><br>
+                    <p>Gestão para o seu Banho & Tosa. 
+                    Agenda de Banhistas, Reservas, 
+                    Controle de Clientes, Serviços Adicionais 
+                    e muito mais!</p><br>
+                </div>
                 <button>SAIBA MAIS</button>            
-            </div>
+                </li>
             <br>
             <br>
-            <div id="gestaoPetShop" class="cards">
-                <img src="../assets/dog.svg" alt="" height="50px"><br>
-                <h5>Gestão para Pet Shop</h5><br>
-                <h4>SISTEMAPET PET SHOP</h4><br>
-                <p>Cuide de Seu Pet Shop de Fácil e Rápida. 
-                Entrada de Estoque automática ou Manual, 
-                Relatórios de Venda e muito mais!</p><br>
-                <button>SAIBA MAIS</button>            
-            </div>
+            <li id="gestaoPetShop" class="cards">
+                <img class="icon" src="../assets/dog.svg" alt="" height="50px"><br>
+                <div class="info">
+                    <h5 class="titulo">Gestão para Pet Shop</h5><br>
+                    <h4 class="titulo">SISTEMAPET PET SHOP</h4><br>
+                    <p>Cuide de Seu Pet Shop de Fácil e Rápida. 
+                    Entrada de Estoque automática ou Manual, 
+                    Relatórios de Venda e muito mais!</p><br>
+                    <button>SAIBA MAIS</button> 
+                </div>           
+            </li>
             <br>
             <br>
-            <div id="gestaoClinica" class="cards">
-                <img src="../assets/seringa.svg" alt="" height="50px"><br>
-                <h5>Gestão para Clínicas Veterinárias</h5><br>
-                <h4>SISTEMAPET VETERINARIO</h4><br>            
-                <p>Gerencie as Informações de seus Pacientes 
-                e de seus Clientes de Forma Fácil e Rápida. 
-                Histórico, Lembretes e muito mais</p><br>
-                <button>SAIBA MAIS</button>            
-            </div>
+            <li id="gestaoClinica" class="cards">
+                <img class="icon" src="../assets/seringa.svg" alt="" height="50px"><br>
+                <div class="info">
+                    <h5 class="titulo">Gestão para Clínicas Veterinárias</h5><br>
+                    <h4 class="titulo">SISTEMAPET VETERINARIO</h4><br>            
+                    <p>Gerencie as Informações de seus Pacientes 
+                    e de seus Clientes de Forma Fácil e Rápida. 
+                    Histórico, Lembretes e muito mais</p><br>
+                    <button>SAIBA MAIS</button>            
+                </div>
+            </li>
             <br>
             <br>
-            <div id="gestaoFiscal" class="cards"> 
-                <img src="../assets/snota.svg" alt="" height="50px"><br>
-                <h5>Gestão para Notas Fiscais</h5><br>
-                <h4>SISTEMAPET MÓDULO FISCAL</h4><br>
-                <p>Emita de forma fácil, rápida e prática 
-                as NF-e, NFC-e, NFS-e, SAT, MF-e</p><br>
-                <button>SAIBA MAIS</button>            
-            </div>
-        <br>
+            <li id="gestaoFiscal" class="cards"> 
+                <img class="icon" src="../assets/snota.svg" alt="" height="50px"><br>
+                <div class="info">
+                    <h5 class="titulo">Gestão para Notas Fiscais</h5><br>
+                    <h4 class="titulo">SISTEMAPET MÓDULO FISCAL</h4><br>
+                    <p>Emita de forma fácil, rápida e prática 
+                    as NF-e, NFC-e, NFS-e, SAT, MF-e</p><br>
+                    <button>SAIBA MAIS</button>  
+                </div>
+            </li>          
+        </ul>
         <hr>
         <div id="contactUs">
             <h3>CONTATE-NOS!</h3>
