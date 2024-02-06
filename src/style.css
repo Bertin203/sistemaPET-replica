@@ -1,8 +1,45 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.cards{
+    display: box;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    align-content: center;
+}
+
+p{
+    font-size: 14px;
+    align-content: center;
+    
+}
+
+h5{
+    text-align: center;
+}
+
+h4{
+    text-align: c;
+}
+
 #mainImgPets{
     height: 400px;
     
 }
 
+nav{
+    background-color: gray;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .btnHeader{
     border: none;
