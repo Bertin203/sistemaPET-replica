@@ -4,10 +4,301 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            margin: 0 auto;
+        }
+
+        nav{
+            background-color: gray;
+            padding: 10px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-align: right;
+            
+        }
+
+        nav a:hover{
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        #banner{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/allPets.jpg);
+            filter: grayscale(65%);
+            background-position: center;
+            height: 40vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            height: 75px;
+        }
+
+        .mainTitle{
+            text-align: center;
+            font-weight: 600;
+            padding: 20px;
+            padding-top: 70px;
+            font-size: 75px;
+            color: antiquewhite;
+        }
+
+        .slogan{
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            color: antiquewhite;
+        }
+
+        .listagem-cards{
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-evenly;
+            background-color: whitesmoke;
+        }
+
+        .card{
+            position: relative;
+            width: 275px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            border-radius: 15px;
+        }
+
+        .title, .subtitle{
+            text-align: center;
+            padding: 5px;
+        }
+
+        #armengue{
+            width: 250px;
+        }
+
+        .subtitle{
+            font-size: 17px;
+            font-weight: 200;
+        }
+        h5 {
+            background-color: azure;
+            border-radius: 4px;
+
+        }
+        .description{
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .card button{
+            font-size: 16px;
+            font-weight: 550;
+            width: 245px;
+            border-radius: 10px;
+            background-color: #31CFB0;
+            border: 0;
+            padding: 6px;
+        }
+
+        .card button:hover{
+            border: #fff;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .embaixo{
+            position: absolute;
+            bottom: 10px;
+        }
+
+        .contactUs{
+            padding: 30px 30px 30px 30px;   
+        }
+
+        .contactHeader{
+            text-align: center;
+            padding: 10px;
+        }
+
+        #titleContact{
+            padding-bottom: 15px;
+        }
+
+        #subtitleContact{
+            font-size: 18px;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 75vh;
+        }
+
+        form div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        #seuNome, #seuEmail, form textarea{
+            outline: unset;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        #seuNome, #seuEmail{
+            height: 20px;
+        }
+
+        form label{
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        form input:focus, form textarea:focus{
+            background-color: azure;
+        }
+
+        .btnSubmit{
+            align-items: center;
+        }
+
+        .btnSubmit button{
+            font-weight: 600;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .btnSubmit button:hover{
+            background-color: gray;
+            color: whitesmoke;
+        }
+
+        .infoPanel{
+            background-color: rgb(52,52,52);
+            color: white;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo-slogan{
+            width: 250px;
+            padding: 25px;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .logo-slogan p{
+            font-size: 18px;
+            padding-top: 25px;
+        }
+
+        .info-address{
+            padding: 25px;
+            width: 200;
+            font-size: 18px;
+            background-image: url(../assets/lacerda.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .info-address #fone-endereco{
+            padding-top: 30px;
+        }
+
+        .newsletter{
+            padding: 25px;
+            width: 325px;
+            margin-left: auto;
+        }
+
+        .newsletter p{
+            padding-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .newsletter input, .newsletter button{
+            padding: 5px;
+            font-weight: 600;
+            outline: unset;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .newsletter input{
+            width: 235px;
+        }
+
+        .newsletter button:hover{
+            background-color: gray;
+            color: whitesmoke;
+        }
+
+
+        footer{
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            background-color: #2c2c2c;
+        }
+
+        .disclaimer p, .disclaimer a{
+            color: #555555;
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        .links{
+            margin-left: auto;
+        }
+
+        .links p, .links a{
+            color: #555555;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    </style>
     <title>Sistema Pet - Especialistas em Sistemas para o Bem Estar Animal</title>
 </head>
 <body>
@@ -15,7 +306,7 @@
         <div id="bottomMenu">                         
             <nav>
                 <a href="#" id="mainLogoImg">
-                    <img src="../assets/pets.png" alt="logo" id="mainLogo" height="75px">
+                    <img src="./assets/pets.png" alt="logo" id="mainLogo" height="75px">
                 </a>
                 <div class="nav-options">
                     <a href="#"><b>Criadores</b></a>
