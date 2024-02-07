@@ -33,6 +33,7 @@
         <section id="banner">
             <h1 class="mainTitle"><b>Bem-vindo ao Sistema Pet!</b></h1>
             <h3 class="slogan"><i>Especialistas em Sistemas para o Bem-Estar Animal</i></h3>
+            <br><br>
         </section>
 
         <ul class="listagem-cards">
@@ -43,7 +44,6 @@
                     <br>
                     <h5 class="subtitle">SISTEMAPET:<br>CRIADOR</h5>
                 </div>
-                <br>
                 <div class="description">
                     <p>
                         O mais completo sistema de gestão para criadores! 
@@ -60,7 +60,7 @@
             <li class="card">
                 <img src="../assets/hotelIconOrig.svg" alt="" ">
                 <div class="titles">
-                    <h3 class="title">Gestão Completa para Daycare de Animais</h3>
+                    <h3 class="title">Gestão para Daycare de Animais</h3>
                     <br>
                     <h5 class="subtitle">SISTEMAPET:<br>DAYCARE</h5>
                 </div>
@@ -156,88 +156,101 @@
                     <button>SAIBA MAIS</button>
                 </div>
             </li>
-
         </ul>
 
-
         <div class="contactUs">
+
             <div class="contactHeader">
                 <h1 id="titleContact">CONTATE-NOS!</h1>
                 <p id="subtitleContact"><b>Entre em contato para que possamos sanar suas dúvidas!</b></p>
                 <p id="dash">________________________________________</p>    
             </div>
+            
+            <section>
+                <form action="" method="POST">
+                    <div class="inputNome">
+                        <label for="seuNome">Seu nome:</label>                            
+                        <input id="seuNome" type="text" placeholder="Fulano da Silva ">
+                    </div>
 
-            <div class="form">
-                <p>Para usufruir basta preencher esse rápido cadastro, 
-                informando os dados cadastrais, o plano selecionado e 
-                a forma de pagamento preferida!</p>
-                <div class="formFields">
-                    <form action="" method="POST">d
-                        <div class="inputs">
-                            <label for="seuNome">Seu nome:</label>                            
-                            <input id="seuNome" type="text">
-                            
-                            <label for="seuEmail">Email:</label>
-                            <input type="email" name="" id="seuEmail">
-                        </div>
-                        <div>
-                            <label for="">Mensagem:</label>
-                            <textarea name="" id="" cols="" rows="5"></textarea>                                                        
-                        </div>              
-                        <br>          
-                        <div>
-                            <input type="submit" value="ENVIAR MENSAGEM">
-                        </div>
-                    </form>
-                </div>
+                    <div class="inputEmail">
+                        <label for="seuEmail">Email:</label>
+                        <input type="email" name="" id="seuEmail" placeholder="fulano_silva@mail.com">
+                    </div>
+                    
+                    <div class="messageField">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea rows="5" id="mensagem" style="resize: none;"></textarea>                                                 
+                    </div>              
+
+                    <br>
+                    <div class="btnSubmit">
+                        <button id="btnMensagem" type="button">ENVIAR MENSAGEM</button>
+                    </div>
+                </form>      
+            </section>
+        </div>
+        <br>
+
+        <div class="infoPanel">
+            <div class="logo-slogan">
+                <img src="../assets/sistemapetbottom.png" alt="">
+                <p>
+                Ajudando o empresário do ramo PET no 
+                seu trabalhado fornecendo <b>Tecnologia, 
+                Inovação & Simplicidade</b> para termos 
+                nossos animais melhor cuidados e divulgados.
+                </p>            
             </div>
-            <br>
-        </div>
-        <hr>
 
-        <br>
-        <div>
-            <img src="../assets/sistemapetbottom.png" alt="">
-            <p>Ajudando o empresário do ramo PET no 
-            seu trabalhado fornecendo Tecnologia, 
-            Inovação & Simplicidade para termos 
-            nossos animais melhor cuidados e divulgados.</p>            
-        </div>
+            <div class="info-address">
+                <p>
+                    <b>Sede:</b>
+                    Praça Tomé de Souza, S/N<br>Salvador - BA
+                </p>
+                <br>
+                <p id="fone-endereco">
+                    <b>Fone:</b> (XX) XXXXX-XXXX<br>
+                    <b>Razão Social:</b> GS Sistemas LTDA<br>
+                    <b>CNPJ:</b> XX.XXX.XXX/XXXX-XX
+                </p>
+            </div>
 
-        <div>
-            <p>
-            <b>Sede:</b>
-            R. Des. Pedro Silva, 2958
-            Coqueiros - Florianópolis, SC
-            </p>
-            <br>
-            <p>
-            <b>Fone:</b> (48) 99167-0040<br>
-            <b>Razão Social:</b> Encantu Soluções em Sistemas LTDA<br>
-            <b>CNPJ:</b> 20.097.664/0001-28
-            </p>
+            <div class="newsletter">
+                <p>
+                <b>Inscreva-se</b> e receba dicas para criadores na web 
+                e fique por dentro das Novidades dos Sistemas:
+                </p>
+                <form action="" method="post">
+                    <input type="email" placeholder="Digite seu Email">
+                    <button id="btnNewsletter" type="button">Inscreva-se</button>
+                </form>
+            </div>
+
         </div>
-        <div>
-            <a href="#">Siga-nos no Facebook</a>
-        </div>
-        <div>
-            <p>
-            <b>Inscreva-se</b> e receba dicas para criadores na web 
-            e fique por dentro das Novidades dos Sistemas:
-            </p>
-            <input type="email" placeholder="Digite seu Email">
-            <button>Inscreva-se</button>
-        </div>
-        <br>
-        <hr>
     </main>
     <footer>
-        <div>
-        <p>Copyrights © 2015 Todos os direitos reservados a Encantu Soluções.</p>
-        <a href="#">Termos de Uso</a> / <a href="#">Política de Privacidade</a>
-        <p>	&#128231; contato@sistemapet.com</p>
-        <p>	&#127911;  (48) 99167-0040</p> 
+        <div class="disclaimer">
+            <p>
+                Esta página web é uma réplica construída para fins educacionais.                 
+            </p>    
+            <a href="https://www.sistemapet.chow.com.br/">Clique aqui para visitar o site original.</a>
+            
+            <br><br>
+            <p>Feito por: <a href="https://www.linkedin.com/in/gilbertosouza203/">Gilberto Souza</a></p>        
+            <br>            
+        </div>
+        <div class="links">
+            <p>
+                <a href="https://github.com/Bertin203/replicaSistemaPET">Código-Fonte</a> / <a href="https://github.com/Bertin203">GitHub do Autor</a>
+            </p>
+            <br><br>
+            <p>	&#128231; gilbertos.dev@gmail.com</p>
         </div>
     </footer>
+
+    <script>
+        window.alert("Projeto em desenvolvimento, por gentileza, aguarde!")
+    </script>
 </body>
 </html>
