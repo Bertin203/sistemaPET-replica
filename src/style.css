@@ -1,7 +1,11 @@
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body{
+    margin: 0 auto;
 }
 
 nav{
@@ -15,11 +19,12 @@ nav{
 nav a{
     text-decoration: none;
     color: #fff;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
     border-radius: 5px;
     transition: 0.3s;
+    text-align: right;
     
 }
 
@@ -28,11 +33,11 @@ nav a:hover{
     color: rgb(0, 0, 0);
 }
 
-#mainTitle{
+#banner{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/allPets.jpg);
     filter: grayscale(65%);
     background-position: center;
-    height: 25vh;
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 2px;
@@ -41,92 +46,128 @@ nav a:hover{
     text-align: center;
 }
 
+.card img {
+    height: 75px;
+}
+
 .mainTitle{
     text-align: center;
+    font-weight: 600;
     padding: 20px;
     padding-top: 70px;
-    font-size: 60px;
+    font-size: 75px;
     color: antiquewhite;
 }
 
 .slogan{
     text-align: center;
-    padding: 15px;
-    font-size: 25px;
+    padding: 5px;
+    font-size: 24px;
     color: antiquewhite;
 }
 
-#allCards{
+.listagem-cards{
+    padding: 40px;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    background-color: gray;
-    padding: 75px;
-    align-items: center;
-    
+    background-color: whitesmoke;
 }
 
-.cards{
-    background-color: bisque;
+.card{
+    position: relative;
     width: 275px;
-    height: 450px;
-    padding: 12px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     border-radius: 15px;
-    transition: 0.2s ease-in-out;
-    border: black 1px solid;
 }
 
-li img{
-    padding-top: 30px;
-}
-
-.titulo{
-    align-items: center;
-}
-
-h5{
-    font-size: 18px;
-
-}
-
-h4{
-    font-size: 16px;
-}
-
-p{
-    height: 100px;
-    width: 225px;
-    padding-bottom: 25px;
-    font-size: 16px;
-    align-content: center;
-    text-align: justify;
-    text-justify: inter-word;
-    
-}
-
-.info{
+.title, .subtitle{
     text-align: center;
+    padding: 5px;
 }
 
-.cards button{
-    font-size: 18px;
-    font-weight: 600;
-    width: 200px;
+#armengue{
+    width: 250px;
+}
+
+.subtitle{
+    font-size: 17px;
+    font-weight: 200;
+}
+h5 {
+    background-color: azure;
+    border-radius: 4px;
+
+}
+.description{
+    text-align: center;
+    font-size: 15px;
+}
+
+.card button{
+    font-size: 16px;
+    font-weight: 550;
+    width: 245px;
     border-radius: 10px;
     background-color: #31CFB0;
     border: 0;
     padding: 6px;
 }
 
-.cards button:hover{
-    background-color: #186a99;
+.card button:hover{
     border: #fff;
     border-radius: 50px;
     color: white;
     font-weight: 600;
 }
+
+.embaixo{
+    position: absolute;
+    bottom: 10px;
+}
+
+.contactUs{
+    padding: 30px 30px 30px 30px;   
+}
+
+.contactHeader{
+    text-align: center;
+    padding: 10px;
+}
+
+#titleContact{
+    padding-bottom: 15px;
+}
+
+#subtitleContact{
+    font-size: 18px;
+}
+
+.form p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+form label{
+    padding-right: 10px;
+}
+
+form .inputs{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-content: space-evenly;
+}
+
+form input, form textarea{
+    outline: unset;
+    padding: 2px;
+    width: 300px;
+    border-radius: 5px;
+}
+
